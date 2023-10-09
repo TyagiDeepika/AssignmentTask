@@ -24,7 +24,6 @@ def logout_view(request):
 
 def details_view(request):
     user_data = User.objects.all()
-    print("user_data -----",user_data)
     return render(request, 'details.html',{'user_data':user_data})
 
 
